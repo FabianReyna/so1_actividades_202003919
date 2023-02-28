@@ -1,9 +1,9 @@
-#Descripcion
+# Descripcion
 Actualmente existe un bug en la container image de frontend del ejemplo visto en clase. Lo que sucede es que al momento de cargar una URL especifica se obtiene un error 404. La actividad consiste en entender y solucionar el problema. Subir la solución al folder indicado y crear un *readme*.md file explicando el problema y cual es su solución.
 
 [Link del repositorio](github.com/susguzman/so1_containers)
 
-#Solucion
+# Solucion
 Para poder trabajar nginx junto con react se deben realizar ciertas configuraciones extras, puesto que, react solo renderiza un *index.html* y dentro de este se encuentran todas las "rutas" de la pagina web y nginx intenta buscarlas como otro archivo.
 
 Para solucionarlo creamos dentro de la carpeta del frontend el archivo *default.conf*
@@ -12,7 +12,7 @@ Para solucionarlo creamos dentro de la carpeta del frontend el archivo *default.
 
 Dentro de este ponemos la siguiente configuracion:
 
-```json
+```
 server {
     listen 80;
     listen [::]:80;
